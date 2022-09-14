@@ -20,10 +20,19 @@ const Home: NextPage = () => {
     "Finished"
   ]
 
+
+  const handleClick = (direction: string) => {
+    let newStep = currentStep;
+
+    direction === "next" ? newStep++ : newStep--;
+    //check if steps are within bounds
+    newStep > 0 && newStep <= steps.length && setCurrentStep(newStep);
+  }
+
   const displayStep = (step: any) => {
     switch(step) {
       case 1: 
-        return <Details />
+        return <Details handleClick={handleClick} />
       case 2: 
         return <Summary />
       case 3: 
@@ -31,6 +40,7 @@ const Home: NextPage = () => {
       default:
     }
   }
+
 
   return (
     <div className="md:w-1/2 mx-auto pb-2 bg-white">

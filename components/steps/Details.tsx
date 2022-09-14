@@ -1,6 +1,10 @@
 import React from 'react'
 
-const Details = () => {
+interface Props {
+  handleClick: any
+}
+
+const Details = ({ handleClick }: Props) => {
   return (
     <div className='mt-5 md:mt-0 w-[150%]'>
       <div className="flex flex-row space-x-10">
@@ -83,7 +87,7 @@ const Details = () => {
 
             <div className='border-b border-gray-200 mx-6' />
 
-            <button type="button" className="inline-flex m-6 float-right items-center rounded-full border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-2">Continue</button>
+            <button type="button" onClick={() => handleClick("next")} className="inline-flex m-6 float-right items-center rounded-full border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-2">Continue</button>
           </form>
         </div>
 
