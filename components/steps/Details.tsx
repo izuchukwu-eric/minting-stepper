@@ -6,7 +6,7 @@ const Details = () => {
       <form action="#" method="POST">
         <div className="overflow-hidden max-w-xl max-h-2xl shadow rounded-3xl sm:rounded-3xl">
 
-          <div className="bg-white px-4 py-5 sm:p-6 sm:border-b sm:border-gray-200 sm:pt-5">
+          <div className="bg-white px-4 py-5 sm:p-6">
             <div className="grid grid-cols-6 gap-6">
               <div className="col-span-6 sm:col-span-3">
                 <label className="block text-sm font-medium text-gray-700 mb-3">Token name</label>
@@ -20,7 +20,9 @@ const Details = () => {
             </div>
           </div>
 
-          <div className="sm:grid sm:grid-cols-3 sm:items-center sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5">
+          <div className='border-b border-gray-200 mb-5 mx-6' />
+
+          <div className="sm:grid sm:grid-cols-3 sm:items-center sm:gap-4">
             <div className="sm:col-span-6 mx-6">
               <label className="block text-sm font-medium text-gray-700">Token logo</label>
               <div className="mt-1 flex justify-center rounded-3xl  border-2 border-gray-300 px-6 pt-5 pb-6">
@@ -40,6 +42,8 @@ const Details = () => {
               </div>
             </div>
           </div>
+
+          <div className='border-b border-gray-200 p-3 mx-6' />
 
           <div className='p-6'>
             <label className="text-base font-medium text-gray-900">Supply cap</label>
@@ -68,10 +72,18 @@ const Details = () => {
             </fieldset>
           </div>
 
+          <div className='border-b border-gray-200 mb-5 mx-6' />
+
           <div className="mb-6 mx-6">
-            <label className="block tracking-wide text-black text-base font-normal mb-2">Amount to mint</label>
-            <input className="appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-full py-3 px-3 leading-tight focus:outline-none" type='email' required />
+            <label className="block tracking-wide text-gray-900 text-base font-medium mb-2">Amount to mint</label>
+            <label className="block tracking-wide text-gray-400 text-sm font-medium mb-2">Token supply must be greater than zero.</label>
+            <input className="appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-full py-3 px-3 leading-tight focus:outline-none" type='text' placeholder='500,000' required />
           </div>
+
+          <div className='border-b border-gray-200 mx-6' />
+
+          <button type="button" className="inline-flex m-6 float-right items-center rounded-full border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Continue</button>
+
         </div>
       </form>
     </div>
