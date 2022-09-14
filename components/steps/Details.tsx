@@ -6,8 +6,8 @@ interface Props {
 
 const Details = ({ handleClick }: Props) => {
   return (
-    <div className='mt-5 md:mt-0 w-[150%]'>
-      <div className="flex flex-row space-x-10">
+    <div className='mt-5 md:mt-0 md:w-[150%]'>
+      <div className="flex md:flex-row flex-col space-x-10">
         <div className="overflow-hidden max-h-2xl shadow rounded-3xl sm:rounded-3xl">
           <form action="#" method="POST" className=''>
 
@@ -91,7 +91,7 @@ const Details = ({ handleClick }: Props) => {
           </form>
         </div>
 
-        <div className='flex flex-col w-80 float-right'>
+        <div className='flex flex-col mt-10 md:mt-0 md:w-80 float-right'>
           <p className='text-orange-500 text-base font-medium'>Support</p>
           <p className='text-black text-xl my-3 font-bold'>FAQ</p>
           <p className='text-gray-400'>Everything you need to know about token minting. Can't find the answer you're looking for? Please chat to our friendly team</p>

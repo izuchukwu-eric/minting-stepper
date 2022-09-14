@@ -29,7 +29,7 @@ const Summary = ({ handleClick }: Props) => {
             <div className='w-full bg-gray-300 my-5 h-6' />
             <div className='border-b border-gray-200 mb-5' />
           </div>
-          <div className='flex flex-row justify-between'>
+          <div className='flex flex-row justify-between space-x-2'>
             <div className='flex flex-col'>
               <span className='text-gray-600 text-base font-semibold'>Supply cap</span>
               <span className='text-gray-400 font-medium'>Unlimited</span>
@@ -51,7 +51,7 @@ const Summary = ({ handleClick }: Props) => {
               </svg>
               <span onClick={() => handleClick()} className='cursor-pointer text-gray-400 font-medium'>Return to details</span>
             </div>
-            <button type="button" onClick={() => handleClick("next")} className="inline-flex m-6 float-right items-center rounded-full border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-2">Create token</button>
+            <button type="button" onClick={() => handleClick("next")} className="m-6 float-right items-center md:rounded-full rounded-lg border border-transparent bg-indigo-600 md:px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-2">Create token</button>
           </div>
         </div>
       </div>
