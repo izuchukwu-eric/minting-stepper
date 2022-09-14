@@ -34,7 +34,7 @@ const Home: NextPage = () => {
       case 1: 
         return <Details handleClick={handleClick} />
       case 2: 
-        return <Summary />
+        return <Summary handleClick={handleClick} />
       case 3: 
         return <Finished />
       default:

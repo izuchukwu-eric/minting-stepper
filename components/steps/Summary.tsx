@@ -2,10 +2,15 @@ import Image from 'next/image'
 import React from 'react'
 import Logo from "../../assests/biconomy.png"
 
-const Summary = () => {
+
+interface Props {
+  handleClick: any
+}
+
+const Summary = ({ handleClick }: Props) => {
   return (
     <div className="flex justify-center my-2 mx-4 md:mx-0">
-        <form className="w-full max-w-xl bg-white rounded-3xl shadow p-6">
+        <div className="w-full max-w-xl bg-white rounded-3xl shadow p-6">
           <div className="flex flex-wrap items-center -mx-3 mb-6">
             <Image 
               src={Logo}
@@ -44,11 +49,11 @@ const Summary = () => {
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3 cursor-pointer">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
               </svg>
-              <span className='cursor-pointer text-gray-400 font-medium'>Return to details</span>
+              <span onClick={() => handleClick()} className='cursor-pointer text-gray-400 font-medium'>Return to details</span>
             </div>
-            <button type="button" className="inline-flex m-6 float-right items-center rounded-full border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-2">Create token</button>
+            <button type="button" onClick={() => handleClick("next")} className="inline-flex m-6 float-right items-center rounded-full border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-2">Create token</button>
           </div>
-        </form>
+        </div>
       </div>
   )
 }
