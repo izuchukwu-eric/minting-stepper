@@ -87,7 +87,7 @@ const Details = ({ handleClick }: Props) => {
 
             <div className='border-b border-gray-200 mx-6' />
 
-            <button type="button" onClick={() => handleClick("next")} className="inline-flex m-6 float-right items-center rounded-full border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-2">Continue</button>
+            <button type="button" onClick={() => handleClick("next")} className="inline-flex m-6 float-right items-center rounded-full border border-transparent bg-indigo-900 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-2">Continue</button>
           </form>
         </div>
 

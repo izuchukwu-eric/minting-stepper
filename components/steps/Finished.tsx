@@ -19,7 +19,7 @@ const Finished = () => {
           <span className='text-gray-400 font-medium md:text-xl text-xs'>0x30557BF7a8586592aD51b04bD582749c8E2D5a17</span>
         </div>
           <div className='border-b border-gray-200 my-5' />
-          <button type="button" className="items-center md:ml-40 ml-6 rounded-full border border-transparent bg-indigo-600 px-12 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-2">Create schedule</button>
+          <button type="button" className="items-center md:ml-40 ml-6 rounded-full border border-transparent bg-indigo-900 px-12 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-2">Create schedule</button>
       </div>
     </div>
   )

@@ -51,7 +51,7 @@ const Summary = ({ handleClick }: Props) => {
               </svg>
               <span onClick={() => handleClick()} className='cursor-pointer text-gray-400 font-medium'>Return to details</span>
             </div>
-            <button type="button" onClick={() => handleClick("next")} className="m-6 float-right items-center md:rounded-full rounded-lg border border-transparent bg-indigo-600 md:px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-2">Create token</button>
+            <button type="button" onClick={() => handleClick("next")} className="m-6 float-right items-center md:rounded-full rounded-lg border border-transparent bg-indigo-900 md:px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-2">Create token</button>
           </div>
         </div>
       </div>
