@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 
 
   const steps = [
-    "Token details, Setup your token details",
+    "Token details",
     "Token summary",
     "Finished"
   ]
