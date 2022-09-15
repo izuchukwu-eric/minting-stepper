@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import React, { useEffect, useState, useRef } from 'react'
+import Leaf from "../assests/leaf.png"
 
 interface Props {
     steps: string[]
@@ -102,9 +104,20 @@ const Stepper = ({ steps, currentStep }: Props) => {
     
 
   return (
-    <div className='mx-4 p-4 flex justify-between items-center '>
-        {displaySteps}
-    </div>
+    <>
+        <div className='flex flex-row items-center justify-center'>
+            <span className='text-black font-medium text-xl'>Mint token</span>
+            <Image  
+                src={Leaf}
+                objectFit="cover"
+                height={20}
+                width={20}
+            />
+        </div>
+        <div className='mx-4 p-4 flex justify-between items-center '>
+            {displaySteps}
+        </div>
+    </>
   )
 }
 

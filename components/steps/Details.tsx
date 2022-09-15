@@ -107,7 +107,7 @@ const Details = ({ handleClick }: Props) => {
 
         <div className='flex flex-col mt-10 md:mt-0 md:w-80 float-right'>
           <p className='text-orange-500 text-base font-medium'>Support</p>
-          <p className='text-black text-xl my-3 font-bold'>FAQ</p>
+          <p className='text-black text-xl my-3 font-bold'>FAQ<small>S</small></p>
           <p className='text-gray-400'>Everything you need to know about token minting. Can't find the answer you're looking for? Please <u>chat to our friendly team</u></p>
           <div className='flex flex-row mt-10'>
             <p className='font-medium'>What's the difference between an unlimited and limited supply cap?</p>
