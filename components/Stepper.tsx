@@ -76,7 +76,7 @@ const Stepper = ({ steps, currentStep }: Props) => {
                 index !== newStep.length - 1 ? 'w-full flex items-center' : "flex items-center"}>
                 <div className='relative flex flex-col items-center text-teal-600'>
                     <div className={`rounded-full transition duration-500 ease-in-out h-8 w-8 flex items-center justify-center py-3 
-                        ${step.selected ? "bg-slate-200 font-bold border border-blue-800" : "border-2 border-slate-200 bg-white"} ${index === 2 && step.selected && "border border-green-500"}`
+                        ${step.selected ? "bg-slate-200 font-bold border border-blue-800" : "border-2 border-slate-200 bg-white"} ${index === 2 && step.selected && "border bg-green-200 border-green-600"}`
                     }>
                         {/**display steps*/}
                         {/* {step.selected && (
@@ -113,17 +113,17 @@ const Stepper = ({ steps, currentStep }: Props) => {
                         )}
                         
                     </div> 
-                    <div className={`absolute top-0 text-center mt-16 w-32 text-sm font-medium  ${step.highlighted ? "text-blue-800" : "text-gray-700"}`}>
+                    <div className={`absolute top-0 text-center mt-12 w-44 text-sm font-medium  ${step.highlighted ? "text-blue-800" : "text-gray-500"}`}>
                         {/**display description */}
                         {step.description}
                         {step.description === "Token details" && step.selected === true && (
-                            <p>setup your token details</p>
+                            <p className='font-normal text-sm'>Setup your token details</p>
                         )}
                         {step.description === "Token summary" && step.selected === true && (
-                            <p>Please review the details</p>
+                            <p className='font-normal text-sm'>Please review the details</p>
                         )}
                         {step.description === "Finished" && step.selected === true && (
-                            <p>Token created successfully!</p>
+                            <p className='font-normal text-sm'>Token created successfully!</p>
                         )}
                     </div>
                 </div>
