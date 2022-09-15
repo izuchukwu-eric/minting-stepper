@@ -5,7 +5,7 @@ interface Props {
 
 const Details = ({ handleClick }: Props) => {
   return (
-    <div className='mt-5 md:mt-0 md:w-[150%]'>
+    <div className='mt-5 md:mt-10 md:w-[150%] md:absolute md:left-64 md:right-0 md:max-w-6xl'>
       <div className="flex md:flex-row flex-col space-x-10">
         <div className="overflow-hidden max-h-2xl shadow rounded-3xl sm:rounded-3xl">
           <form action="#" method="POST" className=''>
