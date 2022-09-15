@@ -1,4 +1,3 @@
-import React from 'react'
 
 interface Props {
   handleClick: any
@@ -14,12 +13,18 @@ const Details = ({ handleClick }: Props) => {
             <div className="px-4 py-5 sm:p-6">
               <div className="grid grid-cols-6 gap-6">
                 <div className="col-span-6 sm:col-span-3">
-                  <label className="block text-sm font-medium text-gray-700 mb-3">Token name</label>
+                  <div className='flex flex-row space-x-1'>
+                    <label className="block text-sm font-medium text-gray-700 mb-3">Token name</label>
+                    <label className='text-orange-600'>*</label>
+                  </div>
                   <input className="block w-full md:w-64 text-gray-900 font-medium border border-gray-400 rounded-full py-3 px-3 leading-tight focus:outline-none" placeholder='Biconomy' type='text' required />
                 </div>
 
                 <div className="col-span-6 sm:col-span-3">
-                  <label className="block text-sm font-medium text-gray-700 mb-3">Token symbol</label>
+                  <div className='flex flex-row space-x-1'>
+                    <label className="block text-sm font-medium text-gray-700 mb-3">Token symbol</label>
+                    <label className='text-orange-600'>*</label>
+                  </div>
                   <input className="block w-full md:w-64 text-gray-900 font-medium border border-gray-400 rounded-full py-3 px-3 leading-tight focus:outline-none" type='text' placeholder='BICO' required />
                 </div>
               </div>
@@ -29,7 +34,10 @@ const Details = ({ handleClick }: Props) => {
 
             <div className="sm:grid sm:grid-cols-3 sm:items-center sm:gap-4">
               <div className="sm:col-span-6 mx-6">
-                <label className="block text-sm font-medium text-gray-700">Token logo</label>
+                <div className='flex flex-row space-x-1'>
+                  <label className="block text-sm font-medium text-gray-700">Token logo</label>
+                  <label className='text-orange-600'>*</label>
+                </div>
                 <div className="mt-1 flex justify-center rounded-3xl border-2 border-gray-300 px-6 pt-5 pb-6">
                   <div className="space-y-1 text-center">
                     <svg className="mx-auto w-10 h-10 mb-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
@@ -48,12 +56,15 @@ const Details = ({ handleClick }: Props) => {
             <div className='border-b border-gray-200 p-3 mx-6' />
 
             <div className='p-6'>
-              <label className="text-base font-medium text-gray-900">Supply cap</label>
+              <div className='flex flex-row space-x-1'>
+                <label className="text-base font-medium text-gray-900">Supply cap</label>
+                <label className='text-orange-600'>*</label>
+              </div>
               <fieldset className="mt-4">
                 <div className="space-y-4">
                   <div className='relative flex flex-col items-start'>
                     <div className="flex items-center">
-                      <input id="email" name="notification-method" type="radio" checked className="h-4 w-4 border-gray-300  text-orange-500	 focus:ring-orange-500" />
+                      <input name="supply-cap" type="radio" checked className="h-4 w-4 accent-red-600 focus:accent-red-600" />
                       <label className="ml-2 block text-sm font-medium text-gray-700">Unlimited</label>
                     </div>
                     <div className="ml-3 text-sm">
@@ -63,7 +74,7 @@ const Details = ({ handleClick }: Props) => {
 
                   <div className='relative flex flex-col items-start'>
                     <div className="flex items-center">
-                      <input id="email" name="notification-method" type="radio" checked className="h-4 w-4 border-gray-300 text-orange-500	 focus:ring-orange-500" />
+                      <input name="supply-cap" type="radio" checked className="h-4 w-4 accent-red-600 focus:accent-red-600" />
                       <label className="ml-2 block text-sm font-medium text-gray-700">Limited</label>
                     </div>
                     <div className="ml-3 text-sm">
@@ -77,7 +88,10 @@ const Details = ({ handleClick }: Props) => {
             <div className='border-b border-gray-200 mb-5 mx-6' />
 
             <div className="mb-6 mx-6">
-              <label className="block tracking-wide text-gray-900 text-base font-medium mb-2">Amount to mint</label>
+              <div className='flex flex-row space-x-1'>
+                <label className="block tracking-wide text-gray-900 text-base font-medium mb-2">Amount to mint</label>
+                <label className='text-orange-600'>*</label>
+              </div>
               <label className="block tracking-wide text-gray-400 text-sm font-medium mb-2">Token supply must be greater than zero.</label>
               <div className='flex flex-row justify-between border w-full border-gray-400 rounded-full py-3 px-3 leading-tight '>
                 <input className="appearance-none block w-full bg-white text-gray-900 font-medium focus:outline-none" type='text' placeholder='500,000' required />
@@ -94,7 +108,7 @@ const Details = ({ handleClick }: Props) => {
         <div className='flex flex-col mt-10 md:mt-0 md:w-80 float-right'>
           <p className='text-orange-500 text-base font-medium'>Support</p>
           <p className='text-black text-xl my-3 font-bold'>FAQ</p>
-          <p className='text-gray-400'>Everything you need to know about token minting. Can't find the answer you're looking for? Please chat to our friendly team</p>
+          <p className='text-gray-400'>Everything you need to know about token minting. Can't find the answer you're looking for? Please <u>chat to our friendly team</u></p>
           <div className='flex flex-row mt-10'>
             <p className='font-medium'>What's the difference between an unlimited and limited supply cap?</p>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-gray-500">
