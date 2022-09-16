@@ -18,6 +18,7 @@ const Summary = ({ handleClick }: Props) => {
               height={50}
               width={50}
               className="rounded-2xl"
+              alt="biconomy"
             />
             <span className='text-black text-3xl p-3 font-bold'>Biconomy</span>
             <div className='bg-gray-300 rounded-full'>

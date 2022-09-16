@@ -138,6 +138,7 @@ const Stepper = ({ steps, currentStep }: Props) => {
                 objectFit="cover"
                 height={20}
                 width={20}
+                alt="leaf"
             />
         </div>
         <div className='mx-4 p-4 flex justify-between items-center '>

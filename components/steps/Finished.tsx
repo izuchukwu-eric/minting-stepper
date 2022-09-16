@@ -14,6 +14,7 @@ const Finished = () => {
             height={90}
             width={90}
             className="rounded-2xl mt-20"
+            alt="biconomy"
           />
           <span className='text-black text-xl p-3 font-bold'>BICONOMY</span>
           <span className='text-gray-400 font-medium md:text-xl text-xs'>0x30557BF7a8586592aD51b04bD582749c8E2D5a17</span>

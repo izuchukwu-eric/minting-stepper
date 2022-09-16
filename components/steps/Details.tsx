@@ -105,25 +105,25 @@ const Details = ({ handleClick }: Props) => {
           </form>
         </div>
 
-        <div className='flex flex-col mt-10 md:mt-0 md:w-80 float-right'>
-          <p className='text-orange-500 text-base font-medium'>Support</p>
-          <p className='text-black text-xl my-3 font-bold'>FAQ<small>S</small></p>
-          <p className='text-gray-400'>Everything you need to know about token minting. Can't find the answer you're looking for? Please <u>chat to our friendly team</u></p>
-          <div className='flex flex-row mt-10'>
-            <p className='font-medium'>What's the difference between an unlimited and limited supply cap?</p>
+        <div className="flex flex-col mt-10 md:mt-0 md:w-80 float-right">
+          <p className="text-orange-500 text-base font-medium">Support</p>
+          <p className="text-black text-xl my-3 font-bold">FAQ<small>S</small></p>
+          <p className="text-gray-400">Everything you need to know about token minting. Can&apos;t find the answer you&apos;re looking for? Please <u>chat to our friendly team</u></p>
+          <div className="flex flex-row mt-10">
+            <p className="font-medium">What's the difference between an unlimited and limited supply cap?</p>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-gray-500">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-            <p className='mt-5 text-gray-400'><b>Unlimited supply cap</b> indicates that there isn't a cap on the total supply. Whereas a fixed supply cap is a fixed number of total tokens that have been(or will be) created.</p>
-          <div className='flex flex-row justify-between mt-8'>
-            <p className='font-medium'>What's is the maximum character length of token symbol?</p>
+            <p className="mt-5 text-gray-400"><b>Unlimited supply cap</b> indicates that there isn&apos;t a cap on the total supply. Whereas a fixed supply cap is a fixed number of total tokens that have been(or will be) created.</p>
+          <div className="flex flex-row justify-between mt-8">
+            <p className="font-medium">What&apos;s is the maximum character length of token symbol?</p>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-gray-500">
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <div className='flex flex-row justify-between mt-8'>
-            <p className='font-medium'>What's is supply type?</p>
+          <div className="flex flex-row justify-between mt-8">
+            <p className="font-medium">What&apos;s is supply type?</p>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-gray-500">
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
