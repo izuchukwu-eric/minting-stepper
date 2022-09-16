@@ -110,7 +110,7 @@ const Details = ({ handleClick }: Props) => {
           <p className="text-black text-xl my-3 font-bold">FAQ<small>S</small></p>
           <p className="text-gray-400">Everything you need to know about token minting. Can&apos;t find the answer you&apos;re looking for? Please <u>chat to our friendly team</u></p>
           <div className="flex flex-row mt-10">
-            <p className="font-medium">What's the difference between an unlimited and limited supply cap?</p>
+            <p className="font-medium">What&apos;s the difference between an unlimited and limited supply cap?</p>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-gray-500">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
