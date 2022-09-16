@@ -11,6 +11,12 @@ const Stepper = ({ steps, currentStep }: Props) => {
     const [newStep, setNewStep] = useState<string[]>([]);
     const stepRef = useRef({});;
 
+    /**
+     * function to keep track and updated the step
+     * @param stepNumber 
+     * @param steps 
+     * @returns the updated step
+     */
     const updateStep = (stepNumber: number, steps: any) => {
         const newSteps = [...steps]
         let count = 0;
@@ -76,7 +82,7 @@ const Stepper = ({ steps, currentStep }: Props) => {
                 index !== newStep.length - 1 ? 'w-full flex items-center' : "flex items-center"}>
                 <div className='relative flex flex-col items-center text-teal-600'>
                     <div className={`rounded-full transition duration-500 ease-in-out h-8 w-8 flex items-center justify-center py-3 
-                        ${step.selected ? "bg-slate-200 font-bold border-2 border-blue-800" : "border-2 border-slate-200 bg-white"} ${index === 2 && step.selected ? "border-2 bg-green-200 ring-offset-2 ring-4 ring-green-100 border-green-800" : ""} ${index === 1 && step.selected && "border-2 ring-offset-2 ring-4 ring-blue-100"} ${index === 1 && step.completed && "ring-0 ring-offset-0"}`
+                        ${step.selected ? "bg-slate-200 font-bold border-2 border-blue-800" : "border-2 border-slate-200 bg-white"} ${index === 2 && step.selected && "border-2 bg-green-200 ring-offset-2 ring-4 ring-green-100 border-green-800"} ${index === 1 && step.selected && "border-2 ring-offset-2 ring-4 ring-blue-100"} ${index === 1 && step.completed && "ring-0 ring-offset-0"}`
                     }>
                         {/**display steps*/}
                         {step.completed && step.selected && (
@@ -85,10 +91,8 @@ const Stepper = ({ steps, currentStep }: Props) => {
                             </svg>
                         )} 
                                 
-                        {!step.selected && !step.completed ? (
+                        {!step.selected && !step.completed && (
                             <span className="h-2.5 w-2.5 rounded-full bg-slate-200" aria-hidden="true"></span>
-                        ) : (
-                            <div></div>
                         )}
                         
                         {step.selected && (
@@ -96,7 +100,7 @@ const Stepper = ({ steps, currentStep }: Props) => {
                         )}
 
                         {index === 2 && (
-                            <svg className={`h-6 w-6 text-green-500 ${!step.selected && !step.completed && "hidden"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <svg className={`h-6 w-6 text-green-800 ${!step.selected && !step.completed && "hidden"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                             </svg>
                         )}
