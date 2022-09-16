@@ -68,34 +68,23 @@ const Stepper = ({ steps, currentStep }: Props) => {
         const current = updateStep(currentStep - 1, stepRef.current);
         setNewStep(current)
     }, [steps, currentStep])    
-    console.log(newStep)
 
+    
     const displaySteps = newStep.map((step: any, index: number) => {
         return ( 
             <div key={index} className={
                 index !== newStep.length - 1 ? 'w-full flex items-center' : "flex items-center"}>
                 <div className='relative flex flex-col items-center text-teal-600'>
                     <div className={`rounded-full transition duration-500 ease-in-out h-8 w-8 flex items-center justify-center py-3 
-                        ${step.selected ? "bg-slate-200 font-bold border border-blue-800" : "border-2 border-slate-200 bg-white"} ${index === 2 && step.selected && "border bg-green-200 border-green-600"}`
+                        ${step.selected ? "bg-slate-200 font-bold border-2 border-blue-800" : "border-2 border-slate-200 bg-white"} ${index === 2 && step.selected ? "border-2 bg-green-200 ring-offset-2 ring-4 ring-green-100 border-green-800" : ""} ${index === 1 && step.selected && "border-2 ring-offset-2 ring-4 ring-blue-100"} ${index === 1 && step.completed && "ring-0 ring-offset-0"}`
                     }>
                         {/**display steps*/}
-                        {/* {step.selected && (
-                            // <span className="h-2.5 w-2.5 rounded-full bg-slate-200" aria-hidden="true"></span>
-                            // <a href="#" className="relative flex h-8 w-8 items-center justify-center rounded-full border-2 border-slate-200" aria-current="step">
-                            <span className="h-2.5 w-2.5 flex justify-center rounded-full bg-blue-800" aria-hidden="true"></span>
-                            // </a>
-                        )} */}
-                        {step.completed && step.selected ? (
+                        {step.completed && step.selected && (
                             <svg className={`h-6 w-6 text-blue-800 ${index === 2 && "text-green-500"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                             </svg>
-                        ) : (
-                            // <a href="#" className="relative flex h-8 w-8 items-center justify-center rounded-full border-2 border-slate-200 bg-white" aria-current="step">
-                                // <span className="h-2.5 w-2.5 rounded-full bg-red-600" aria-hidden="true"></span>
-                            // </a>
-                            <div></div>
-                        )}
-
+                        )} 
+                                
                         {!step.selected && !step.completed ? (
                             <span className="h-2.5 w-2.5 rounded-full bg-slate-200" aria-hidden="true"></span>
                         ) : (
