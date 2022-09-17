@@ -41,7 +41,7 @@ const Home: NextPage = () => {
 
   return (
     <div className="md:w-1/2 mx-auto pb-2 bg-white">
-      <div className='container horizontal mt-20'>
+      <div className='container horizontal mt-20 mx-14'>
         {/**Stepper */}
         <Stepper 
           steps={steps}

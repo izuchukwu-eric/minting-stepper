@@ -78,8 +78,7 @@ const Stepper = ({ steps, currentStep }: Props) => {
     
     const displaySteps = newStep.map((step: any, index: number) => {
         return ( 
-            <div key={index} className={
-                index !== newStep.length - 1 ? 'w-full flex items-center' : "flex items-center"}>
+            <div key={index} className={index !== newStep.length - 1 ? 'w-full flex items-center' : "flex items-center"}>
                 <div className='relative flex flex-col items-center text-teal-600'>
                     <div className={`rounded-full transition duration-500 ease-in-out h-8 w-8 flex items-center justify-center py-3 
                         ${step.selected ? "bg-slate-200 font-bold border-2 border-blue-800" : "border-2 border-slate-200 bg-white"} ${index === 2 && step.selected && "border-2 bg-green-200 ring-offset-2 ring-4 ring-green-100 border-green-800"} ${index === 1 && step.selected && "border-2 ring-offset-2 ring-4 ring-blue-100"} ${index === 1 && step.completed && "ring-0 ring-offset-0"}`
@@ -141,7 +140,7 @@ const Stepper = ({ steps, currentStep }: Props) => {
                 alt="leaf"
             />
         </div>
-        <div className='mx-4 p-4 flex justify-between items-center '>
+        <div className='md:mx-4 p-4 flex justify-between items-center '>
             {displaySteps}
         </div>
     </>
