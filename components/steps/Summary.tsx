@@ -9,7 +9,7 @@ interface Props {
 
 const Summary = ({ handleClick }: Props) => {
   return (
-    <div className="flex justify-center my-2 mx-4 md:mx-0">
+    <div className="flex justify-center my-2 -mx-8 md:mx-0 md:w-full w-[120%]">
         <div className="w-full max-w-xl bg-white rounded-3xl shadow p-6">
           <div className="flex flex-wrap items-center -mx-3 mb-6">
             <Image 
@@ -52,7 +52,7 @@ const Summary = ({ handleClick }: Props) => {
               </svg>
               <span onClick={() => handleClick()} className='cursor-pointer text-gray-400 font-medium'>Return to details</span>
             </div>
-            <button type="button" onClick={() => handleClick("next")} className="m-6 float-right items-center md:rounded-full rounded-lg border border-transparent bg-indigo-900 md:px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-2">Create token</button>
+            <button type="button" onClick={() => handleClick("next")} className="m-6 float-right items-center rounded-full border border-transparent bg-indigo-900 md:px-6 px-3 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-2">Create token</button>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ const Details = ({ handleClick }: Props) => {
   return (
     <div className='mt-5 md:mt-10 md:w-[150%] md:absolute md:left-64 md:right-0 md:max-w-6xl'>
       <div className="flex md:flex-row flex-col space-x-10">
-        <div className="overflow-hidden max-h-2xl w-[120%] md:mx-0 -mx-7 md:w-[60%] shadow rounded-3xl mb-10 sm:rounded-3xl">
+        <div className="overflow-hidden max-h-2xl w-[120%] md:mx-0 -mx-8 md:w-[60%] shadow rounded-3xl mb-10 sm:rounded-3xl">
           <form action="#" method="POST" className=''>
 
             <div className="px-4 py-5 sm:p-6">
